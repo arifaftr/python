@@ -1,5 +1,6 @@
 import random
-print("| Game Tebak Angka |\n")
+print("|--------Game Tebak Angka--------|\n")
+
 username = input("Masukan username : ")
 print(f"Selamat datang {username} di permainan tebak angka!\n")
 
@@ -11,7 +12,7 @@ while True:
     print("silahkan tebak angka 1-10")
     tebakan = int(input("Masukan tebakan anda :"))
     print(f"tebakan anda adalah {tebakan}")
-    input("...")
+    input("tekan enter untuk melanjutkan...")
     
     #validasi kebenaran
     if tebakan == angka:
@@ -22,10 +23,12 @@ while True:
     print(f"angka yang benar adalah {angka}")
     
     #konformasi user
-    konfirmasi = input("tekan enter jika ingin melanjutkan...")
-    print("\n")
-    if konfirmasi == "":
+    konfirmasi = input("apakah anda ingin melanjutkan permainan (y/n) : ")
+    
+    if konfirmasi == "y":
+        input("tekan enter untuk memuat permainan...")
         continue
-    else:
+    elif konfirmasi == "n":
+        print("terimakasih telah bermain!")
         break
 
