@@ -1,5 +1,5 @@
 # Python Project
-This is a repository for a **Python** projects collection that i'm work on
+This is a repository for a **Python** projects collection that i'm work on  
 still in progress and mostly not perfect.
 
 ---
